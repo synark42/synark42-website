@@ -12,4 +12,5 @@ const nextConfig = {
   trailingSlash: true,
 }
 
+// Trigger a new deployment
 export default nextConfig
