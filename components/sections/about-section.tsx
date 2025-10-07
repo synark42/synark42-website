@@ -21,18 +21,22 @@ export function AboutSection() {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-6 text-pretty">
-              Founded in 2008, Synark42 has been at the forefront of digital
-              transformation, helping businesses leverage technology to achieve
-              unprecedented growth and efficiency.
+              Synark42 began as a community of passionate technologists, united
+              by a shared vision of leveraging technology to solve complex
+              problems. From these collaborative roots, we've grown into a
+              company dedicated to helping businesses achieve unprecedented
+              growth and efficiency through innovative IT solutions.
             </p>
             <p className="text-muted-foreground mb-8">
-              Our team of certified experts combines deep technical knowledge
-              with business acumen to deliver solutions that not only meet
-              today's challenges but anticipate tomorrow's opportunities.
+              Our team combines deep technical knowledge with business acumen to
+              deliver solutions that not only meet today's challenges but
+              anticipate tomorrow's opportunities. We are driven by a commitment
+              to innovation and a desire to empower our clients to thrive in the
+              digital age.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
+              {/* {stats.map((stat, index) => (
                 <AnimatedSection
                   key={index}
                   delay={400 + index * 100}
@@ -50,7 +54,7 @@ export function AboutSection() {
                     </div>
                   </div>
                 </AnimatedSection>
-              ))}
+               ))} */}
             </div>
           </AnimatedSection>
 
@@ -64,8 +68,8 @@ export function AboutSection() {
               alt="Synark42 team"
               className="rounded-2xl shadow-lg w-full h-auto transition-all duration-500 hover:shadow-xl hover:scale-[1.02]"
             />
-            <AnimatedSection delay={600} animation="fade-up">
-              <Card className="absolute -bottom-6 -left-6 border-border/50 bg-card/95 backdrop-blur hover:shadow-lg transition-all duration-300">
+            {/* <AnimatedSection delay={600} animation="fade-up"> */}
+            {/* <Card className="absolute -bottom-6 -left-6 border-border/50 bg-card/95 backdrop-blur hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-4">
                   <div className="text-sm font-medium text-foreground">
                     Trusted by Fortune 500
@@ -74,8 +78,8 @@ export function AboutSection() {
                     500+ successful projects delivered
                   </div>
                 </CardContent>
-              </Card>
-            </AnimatedSection>
+              </Card> */}
+            {/* </AnimatedSection> */}
           </AnimatedSection>
         </div>
       </div>

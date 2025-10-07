@@ -20,7 +20,7 @@ export function HeroSection() {
   };
 
   return (
-    <AnimatedSection className="relative" fullHeight>
+    <AnimatedSection className="relative" fullHeight threshold={0}>
       <div className="absolute inset-0 z-[-1]">
         <Threads amplitude={1} distance={0.02} enableMouseInteraction={true} />
       </div>
@@ -72,11 +72,15 @@ export function HeroSection() {
           </AnimatedSection>
 
           <AnimatedSection delay={800} animation="fade-up">
-            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <div
+              className="flex flex-col gap-4 sm:flex-row sm:justify-center"
+              style={{ zIndex: 10 }}
+            >
               <Button
                 size="lg"
                 onClick={() => scrollToSection("contact")}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground transform hover:scale-105 transition-all duration-200"
+                style={{ pointerEvents: "auto" }}
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -84,8 +88,9 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                onClick={() => scrollToSection("portfolio")}
+                onClick={() => scrollToSection("projects")}
                 className="transform hover:scale-105 transition-all duration-200 bg-transparent"
+                style={{ pointerEvents: "auto" }}
               >
                 View Our Work
               </Button>

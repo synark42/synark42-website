@@ -12,6 +12,8 @@ interface AnimatedSectionProps {
   animation?: "fade-up" | "fade-in" | "slide-left" | "slide-right";
   id?: string;
   fullHeight?: boolean;
+  threshold?: number;
+  rootMargin?: string;
 }
 
 export function AnimatedSection({
@@ -21,8 +23,10 @@ export function AnimatedSection({
   animation = "fade-up",
   id,
   fullHeight,
+  threshold,
+  rootMargin,
 }: AnimatedSectionProps) {
-  const { ref, isVisible } = useScrollAnimation();
+ const { ref, isVisible } = useScrollAnimation({ threshold, rootMargin });
 
   const animationClasses = {
     "fade-up": " opacity-0",
