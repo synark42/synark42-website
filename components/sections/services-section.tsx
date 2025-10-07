@@ -15,7 +15,7 @@ const services = [
     link: "#",
     title: "AI Integration",
     description:
-      "Seamlessly integrate advanced AI into your systems to enhance automation, insights, and efficiency.",
+      "Seamlessly integrate advanced AI solutions into your systems to enhance automation, insights, and efficiency. Leverage machine learning and deep learning technologies.",
   },
   {
     image: "/images/services/web-development.png",

@@ -65,7 +65,7 @@ export function HeroSection() {
 
           <AnimatedSection delay={600} animation="fade-up">
             <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground text-pretty">
-              Transform your business with cutting-edge technology solutions. We
+              Transform your business with cutting-edge technology solutions, including AI integration, cloud services, and custom software development. We
               deliver secure, scalable, and innovative IT services that drive
               growth and efficiency.
             </p>

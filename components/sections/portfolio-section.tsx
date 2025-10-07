@@ -18,7 +18,7 @@ export function PortfolioSection() {
           <p className="mt-4 text-lg  text-pretty relative">
             Showcasing innovative IT solutions brought to life. From concept to
             deployment, Synark42 delivers projects that drive real impact for
-            our clients.{" "}
+            our clients.
           </p>
         </div>
       </div>
